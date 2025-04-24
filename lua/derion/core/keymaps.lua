@@ -32,3 +32,15 @@ map("n", "<C-Left>", "<C-w><")
 map("n", "<C-Right>", "<C-w>>")
 map("n", "<C-Up>", "<C-w>+")
 map("n", "<C-Down>", "<C-w>-")
+
+-- Show diagnostics in a floating window
+map("n", "<leader>d", vim.diagnostic.open_float)
+
+-- Show diagnostics in location list
+map("n", "<leader>D", vim.diagnostic.setloclist)
+
+-- Go to the next diagnostic
+map("n", "[d", vim.diagnostic.goto_prev)
+
+-- Go to the previous diagnostic
+map("n", "]d", vim.diagnostic.goto_next)
